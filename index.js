@@ -22,7 +22,6 @@ client.once("ready", async () => {
   console.log("Ready!");
   //コマンド登録
   const { REST, Routes } = require('discord.js');
-  const { clientId, guildId } = require('./dvc.json');
   const clientId = "1152453551835070514"
   const clientId = "1092451952585080852"
   const fs = require('node:fs');

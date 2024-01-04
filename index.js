@@ -1,8 +1,3 @@
-const http = require('http');
-http.createServer(function(req, res) {
-  res.write("POWER!!!!!");
-  res.end();
-}).listen(5050);
 const config = require("./config.js");
 const path = require('node:path');
 const { Client, Collection, GatewayIntentBits } = require('discord.js');
@@ -29,6 +24,8 @@ client.once("ready", async () => {
   //コマンド登録
   const { REST, Routes } = require('discord.js');
   const { clientId, guildId } = require('./dvc.json');
+  const clientId = "1152453551835070514"
+  const clientId = "1092451952585080852"
   const fs = require('node:fs');
 
   const commands = [];

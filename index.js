@@ -1,4 +1,3 @@
-const config = require("./config.js");
 const path = require('node:path');
 const { Client, Collection, GatewayIntentBits } = require('discord.js');
 const client = new Client({
@@ -339,4 +338,4 @@ client.on('messageCreate', async message => {
 
 
 //以下ログイン
-client.login(config.token);
+client.login(process.env.DISCORD_TOKEN);

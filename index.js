@@ -1,3 +1,8 @@
+const http = require('http');
+http.createServer(function (req, res) {
+  res.write("POWER!!!!!");
+  res.end();
+}).listen(5050);
 const path = require('node:path');
 const { Client, Collection, GatewayIntentBits } = require('discord.js');
 const client = new Client({
